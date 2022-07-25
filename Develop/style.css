@@ -4,6 +4,18 @@ body {
   line-height: 1;
 }
 
+.btn {
+  background-color: #2a76e8; 
+  border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
 textarea{
   background: transparent;
   border: none;
@@ -33,7 +45,14 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  width: 80vw;
+  border-top: 1px solid rgb(5, 5, 5);
+  display: flex;
+  text-align: center;
+}
+
+#todo-list {
+  width: 70vw;
 }
 
 .hour {
@@ -68,4 +87,9 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.dateselector {
+  display:flex;
+  align-items: center;
 }

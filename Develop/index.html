@@ -14,6 +14,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -26,13 +27,98 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="time-stamp"></p>
+      <div class="dateselector">Date: 
+        <div class="col-sm-3">
+          <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+        </div>
+      </div>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row row-1">5 AM 
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-2">6 AM
+        <input type="text" id="todo-list" name="todos">
+        <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-3">7 AM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-4">8 AM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-5">9 AM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-6">10 AM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-7">11 AM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-8">12 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-9">1 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-10">2 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-11">3 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-12">4 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-13">5 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>>
+      <div class="row row-14">6 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-15">7 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-16">8 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-17">9 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
+      <div class="row row-18">10 PM
+        <input type="text" id="todo-list" name="todos">
+          <button id="savebtn" class="btn">SAVE</button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="./script.js"></script>
+      <!-- datepicker -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   </body>
 </html>
