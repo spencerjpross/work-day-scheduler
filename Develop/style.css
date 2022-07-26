@@ -97,5 +97,9 @@ textarea{
 
 .time-box {
   min-width: 50px;
-  
+
+}
+
+.past {
+  background-color: rgb(153, 38, 38);
 }

@@ -2,12 +2,11 @@ var dateInputEl = $('#datepicker');
 
 var today = moment();
 
-var reformatDate = today.format("dddd, MMMM Do YYYY, h:mm:ss a");
+var reformatDate = today.format("dddd, MMMM Do YYYY");
 $("#time-stamp").text(reformatDate);
 
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+var actualTime = today.format('h:mm:ss a');
+console.log(actualTime)
 
   //document.queryselector .addeventlistener
 $(".btn").on('click', function(){
@@ -16,13 +15,45 @@ $(".btn").on('click', function(){
     localStorage.setItem(timeValue, inputValue)
 })
 
-// $(item).val(localStorage.getItem("5 AM"))
-// $(".item3").val(localStorage.getItem("7 AM"))
 
 
-for (i=0; i < 18; i++) {
-    var item = "item" + (i + 1)
-    var time = (i + 5) + " AM"
-    $(item).val(localStorage.getItem(time))
-    console.log($(item).val)
+function colorChange() {   
+   for (i=0; i < 18; i++){
+    const scheduleTime = document.getElementsByClassName('time-box')[i].innerHTML
+    const boxColor = document.getElementById("todo-list")
+    console.log(boxColor)
+     if (scheduleTime < actualTime) {
+        boxColor.classList.add('past')
+   }
 }
+}
+
+colorChange()
+
+
+
+$(".item1").val(localStorage.getItem("5 AM"))
+$(".item2").val(localStorage.getItem("6 AM"))
+$(".item3").val(localStorage.getItem("7 AM"))
+$(".item4").val(localStorage.getItem("8 AM"))
+$(".item5").val(localStorage.getItem("9 AM"))
+$(".item6").val(localStorage.getItem("10 AM"))
+$(".item7").val(localStorage.getItem("11 AM"))
+$(".item8").val(localStorage.getItem("12 PM"))
+$(".item9").val(localStorage.getItem("1 PM"))
+$(".item10").val(localStorage.getItem("2 PM"))
+$(".item11").val(localStorage.getItem("3 PM"))
+$(".item12").val(localStorage.getItem("4 PM"))
+$(".item13").val(localStorage.getItem("5 PM"))
+$(".item14").val(localStorage.getItem("6 PM"))
+$(".item15").val(localStorage.getItem("7 PM"))
+$(".item16").val(localStorage.getItem("8 PM"))
+$(".item17").val(localStorage.getItem("9 PM"))
+$(".item18").val(localStorage.getItem("10 PM"))
+
+// for (i=0; i < 18; i++) {
+//     var item = "item" + (i + 1)
+//     var time = (i + 5) + " AM"
+//     $(item).val(localStorage.getItem(time))
+//     console.log(item)
+// }
