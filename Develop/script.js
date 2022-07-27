@@ -5,8 +5,8 @@ var today = moment();
 var reformatDate = today.format("dddd, MMMM Do YYYY");
 $("#time-stamp").text(reformatDate);
 
-var actualTime = today.format('h:mm:ss a');
-console.log(actualTime)
+var actualTime = today.format('H a');
+
 
   //document.queryselector .addeventlistener
 $(".btn").on('click', function(){
@@ -18,18 +18,20 @@ $(".btn").on('click', function(){
 
 
 function colorChange() {   
-   for (i=0; i < 18; i++){
-    const scheduleTime = document.getElementsByClassName('time-box')[i].innerHTML
-    const boxColor = document.getElementById("todo-list")
-    console.log(boxColor)
+   for (i=5; i < 23; i++){
+    const scheduleTime = document.getElementsByClassName('time-box')[i-5].innerHTML
+    const boxColor = document.getElementsByClassName(`row-${i-4}`)[0].children[1]
+    console.log(scheduleTime)
      if (scheduleTime < actualTime) {
         boxColor.classList.add('past')
+   } else if (scheduleTime > actualTime) {
+       boxColor.classList.toggle('future')
    }
 }
 }
 
-colorChange()
 
+colorChange()
 
 
 $(".item1").val(localStorage.getItem("5 AM"))
