@@ -31,8 +31,7 @@ function colorChange() {
        boxColor.classList.toggle('present')
    } if (firstTwo > firstTwoTime) {
        boxColor.classList.toggle('future')
-   } if (firstTwo > 22)
-        clear()
+   } 
 }
 }
 
