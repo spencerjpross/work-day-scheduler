@@ -107,3 +107,7 @@ textarea{
 .future {
   background-color: rgb(33, 205, 33);
 }
+
+.present {
+  background-color: grey;
+}

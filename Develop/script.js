@@ -21,14 +21,22 @@ function colorChange() {
    for (i=5; i < 23; i++){
     const scheduleTime = document.getElementsByClassName('time-box')[i-5].innerHTML
     const boxColor = document.getElementsByClassName(`row-${i-4}`)[0].children[1]
-    console.log(scheduleTime)
-     if (scheduleTime < actualTime) {
-        boxColor.classList.add('past')
-   } else if (scheduleTime > actualTime) {
+    const firstTwo = scheduleTime.slice(0, 2)
+    const firstTwoTime = actualTime.slice(0, 2)
+    console.log(firstTwoTime) 
+     if (firstTwo < firstTwoTime) {
+            boxColor.classList.toggle('past')
+   } if (firstTwo == firstTwoTime) {
+       boxColor.classList.toggle('past')
+       boxColor.classList.toggle('present')
+   } if (firstTwo > firstTwoTime) {
        boxColor.classList.toggle('future')
-   }
+   } if (firstTwo > 22)
+        clear()
 }
 }
+
+
 
 
 colorChange()
