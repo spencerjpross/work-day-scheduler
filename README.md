@@ -12,3 +12,5 @@ Some challenges I'm still having are getting my local storage retrieval to be in
 
 ![alt screenshot](./images/work-day-scheduler.png)
 
+website link: https://spencerjpross.github.io/work-day-scheduler/
+github link: https://github.com/spencerjpross/work-day-scheduler
