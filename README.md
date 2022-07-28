@@ -10,5 +10,5 @@ Things I learned from this project:
 
 Some challenges I'm still having are getting my local storage retrieval to be in a for loop so that I didn't have to write out my code for every item and each time zone. I'd like to work on the for loop in the future to make it so I don't have repeating code in my JS.  I also had challenges with the color change and using .toggle for the past, present and future color changes.  
 
-![alt screenshot](./Develop/images/work-day-scheduler.png)
+![alt screenshot](./images/work-day-scheduler.png)
 
