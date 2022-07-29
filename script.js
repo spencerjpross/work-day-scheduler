@@ -41,11 +41,11 @@ function colorChange() {
 colorChange()
 
 
-$(".item1").val(localStorage.getItem("05 AM"))
-$(".item2").val(localStorage.getItem("06 AM"))
-$(".item3").val(localStorage.getItem("07 AM"))
-$(".item4").val(localStorage.getItem("08 AM"))
-$(".item5").val(localStorage.getItem("09 AM"))
+$(".item1").val(localStorage.getItem("5 AM"))
+$(".item2").val(localStorage.getItem("6 AM"))
+$(".item3").val(localStorage.getItem("7 AM"))
+$(".item4").val(localStorage.getItem("8 AM"))
+$(".item5").val(localStorage.getItem("9 AM"))
 $(".item6").val(localStorage.getItem("10 AM"))
 $(".item7").val(localStorage.getItem("11 AM"))
 $(".item8").val(localStorage.getItem("12 PM"))
